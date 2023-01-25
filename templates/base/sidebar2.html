@@ -3,9 +3,9 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="#" class="brand-link">
-      <img width="10px" src="https://www.pngitem.com/pimgs/m/532-5327270_gmr-logo-gmr-logo-png-transparent-png.png" alt="Logo" class="brand-image elevation-8"
+      <img src="https://www.pngitem.com/pimgs/m/532-5327270_gmr-logo-gmr-logo-png-transparent-png.png" alt="Logo" class="brand-image elevation-3"
            style="opacity: .8">
-          <span class="brand-text font-weight-light">Admin Panel</span>
+          <span class="brand-text font-weight-light">User Panel</span>
     </a>
 
     <!-- Sidebar -->
@@ -26,36 +26,30 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="{% url 'dashboard' %}" class="nav-link">
+            <a href="{% url 'dashboard2' %}" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Dashboard
               </p>
             </a>
           </li>
-          <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-folder"></i>
+          <li class="nav-item">
+            <a href="{% url 'dashboard2' %}" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
               <p>
-                Event Category
-                <i class="right fas fa-angle-left"></i>
+                Provide Feedback
               </p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{% url 'create-event-category' %}" class="nav-link">
-                  <i class="far fa fa-edit nav-icon"></i>
-                  <p>Create Category</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{% url 'event-category-list' %}" class="nav-link">
-                  <i class="far fa fa-list nav-icon"></i>
-                  <p>Category List</p>
-                </a>
-              </li>
-            </ul>
           </li>
+          <li class="nav-item">
+            <a href="{% url 'dashboard2' %}" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Category list
+              </p>
+            </a>
+          </li>
+          
           <li class="nav-item has-treeview menu-open">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-calendar"></i>
@@ -66,46 +60,35 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{% url 'event-create' %}" class="nav-link">
+                <a href="{% url 'dashboard2' %}" class="nav-link">
                   <i class="far fa fa-edit nav-icon"></i>
                   <p>Create Event</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{% url 'event-list' %}" class="nav-link">
+                <a href="{% url 'dashboard2' %}" class="nav-link">
                   <i class="far fa fa-list nav-icon"></i>
                   <p>Event List</p>
                 </a>
               </li>
+              
               <li class="nav-item">
-                <a href="{% url 'add-event-member' %}" class="nav-link">
-                  <i class="far fa fa-edit nav-icon"></i>
-                  <p>Add Event Member</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{% url 'join-event-list' %}" class="nav-link">
-                  <i class="far fa fa-list nav-icon"></i>
-                  <p>Join Event List</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{% url 'event-wish-list' %}" class="nav-link">
+                <a href="{% url 'dashboard2' %}" class="nav-link">
                   <i class="far fa fa-list nav-icon"></i>
                   <p>Event Wish List</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{% url 'complete-event' %}" class="nav-link">
+                <a href="{% url 'dashboard2' %}" class="nav-link">
                   <i class="far fa fa-list nav-icon"></i>
                   <p>Complete Event List</p>
                 </a>
               </li>
          
               <li class="nav-item">
-                <a href="{% url 'complete-event-user' %}" class="nav-link">
+                <a href="{% url 'dashboard2' %}" class="nav-link">
                   <i class="far fa fa-list nav-icon"></i>
-                  <p>Complete Event User</p>
+                  <p>Past Event History</p>
                 </a>
               </li>
             </ul>
